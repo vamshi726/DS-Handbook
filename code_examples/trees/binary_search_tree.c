@@ -32,7 +32,8 @@ struct node* createNode(int value){
 
 struct node* insertNode(struct node* root, int data)
 {
-    if (root == NULL) return createNode(data);
+    if (root == NULL) 
+return createNode(data);
 
     if (data < root->data)
         root->left  = insert(root->left, data);
